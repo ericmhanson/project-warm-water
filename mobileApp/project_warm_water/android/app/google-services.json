@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "448306602599",
+    "firebase_url": "https://project-warm-water.firebaseio.com",
+    "project_id": "project-warm-water",
+    "storage_bucket": "project-warm-water.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448306602599:android:a143c5aaf5bbecaa8d6ac2",
+        "android_client_info": {
+          "package_name": "projectwarmwater.project_warm_water"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448306602599-3v25ad8pu6kdq0m68tgcbi1g3i6uid5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwHQkALcegDB90qJ7nP8fWEiVRWmXfJXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448306602599-3v25ad8pu6kdq0m68tgcbi1g3i6uid5r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
