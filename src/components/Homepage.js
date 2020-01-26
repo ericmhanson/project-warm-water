@@ -1,35 +1,33 @@
-import React from "react";
-import { FirebaseContext } from "./Firebase";
+import React, { Component } from "react";
 import { Container, Card, CardTitle, CardBody, CardFooter } from "shards-react";
 import "shards-ui/dist/css/shards.min.css";
 import TimeChart from "./TimeChart";
-import TempChart from "./TempChart";
+import GallonsWastedChart from "./GallonsWastedChart";
 
-const Homepage = () => (
-  <FirebaseContext.Consumer>
-    {firebase => {
-      return (
+class Homepage extends Component {
+  render() {
+    return (
+      <>
         <div
           className="background-homepage"
           style={{
-            maxWidth: "100vw",
-            maxHeight: "100vh",
+            width: "100vw",
+            height: "100vh",
             backgroundImage:
-              "linear-gradient(to bottom right, #025377, #b2c0cb)",
+              "linear-gradient(to bottom right, #010e1f, #98dab4)",
             boxSizing: "border-box"
           }}
         >
-
           <Container
             style={{
               display: "flex",
               flexDirection: "column",
-              maxHeight: "100vh",
+              height: "100vh",
               marginLeft: "20vw",
               marginRight: "20vw",
-              backgroundColor: "#6da3c7",
+              backgroundColor: "#cfc1af",
               boxShadow: "10px 10px 5px",
-              margin: 'none'
+              margin: "none"
             }}
           >
             <h1
@@ -66,25 +64,26 @@ const Homepage = () => (
                 justifyContent: "flex-end"
               }}
             >
-              <TempChart />
+              <GallonsWastedChart />
             </div>
           </Container>
-          
-          <div style={{
-            position: 'absolute',
-            left: '0',
-            bottom: '0',
-            width: '15vw',
-            margin: '10px'
-          }}>
+
+          <div
+            style={{
+              position: "absolute",
+              left: "0",
+              bottom: "0",
+              width: "15vw",
+              margin: "10px"
+            }}
+          >
             <Card
               style={{
-                // display: "flex",
-                // flexDirection: "column",
                 maxWidth: "15vw",
-                margin: "0"
+                margin: "0",
+                backgroundColor: "#f4f1ea"
               }}
-              >
+            >
               <CardBody>
                 <CardTitle>Did you know?!</CardTitle>
                 Showering, bathing and using the toilet account for about
@@ -98,21 +97,21 @@ const Homepage = () => (
                 </a>
               </CardFooter>
             </Card>
-              </div>
-          
+          </div>
 
-          <div style={{
-            position: 'absolute',
-            margin: '10px',
-            right: '0',
-            top: '0',
-            width: '15vw',
-          }}>
+          <div
+            style={{
+              position: "absolute",
+              margin: "10px",
+              right: "0",
+              top: "0",
+              width: "15vw"
+            }}
+          >
             <Card
               style={{
-                display: "flex",
-                flexDirection: "column",
-                width: "15vw"
+                width: "15vw",
+                backgroundColor: "#f4f1ea"
               }}
             >
               <CardBody>
@@ -129,11 +128,10 @@ const Homepage = () => (
               </CardFooter>
             </Card>
           </div>
-          
         </div>
-      );
-    }}
-  </FirebaseContext.Consumer>
-);
+      </>
+    );
+  }
+}
 
 export default Homepage;
