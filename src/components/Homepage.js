@@ -39,7 +39,7 @@ class Homepage extends Component {
             >
               Welcome to your Project Warm Water!
             </h1>
-            <div
+            {/* <div
               style={{
                 display: "flex"
               }}
@@ -48,7 +48,7 @@ class Homepage extends Component {
                 Your current set temperature is{" "}
               </h3>
               <h3 style={{ textDecoration: "underline" }}>{}</h3>
-            </div>
+            </div> */}
             <div
               style={{
                 display: "flex",
